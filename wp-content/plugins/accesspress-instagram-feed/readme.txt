@@ -3,8 +3,8 @@ Contributors: Access Keys
 Tags: instagram, instagram feed, instagram tag, instagram slider, instagarm mosaic view, instagarm mosaic layout, instagram lightbox, social media instagram, social network, masonry layout, masonry lightbox, instagarm masonry view, grid rotator, grid rotatory
 Donate link: http://accesspressthemes.com/donation/
 Requires at least: 3.8
-Tested up to: 4.4
-Stable tag: 2.0.9
+Tested up to: 4.5
+Stable tag: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -130,6 +130,10 @@ Once you install the plugin , you can check some general documentation about how
 5. Backend Display Settings Section
 
 == Changelog ==
+= 2.1.0 =
+* Done the bug fixings and optimization of code.
+* Done the plugin compactibility test for wordpress version 4.5
+
 = 2.0.9 =
 * Done the code formatting, optimization and removal of unncessary codes form files.
 

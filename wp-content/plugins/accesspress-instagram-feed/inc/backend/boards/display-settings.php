@@ -1,6 +1,5 @@
 <div class="apsc-boards-tabs" id="apsc-board-display-settings" style="display: none">
     <div class="apsc-tab-wrapper">
-        
         <div class="apsc-option-inner-wrapper">
             <div class="apsc-option-field">
                 <div class="apsc-option-inner-wrapper">

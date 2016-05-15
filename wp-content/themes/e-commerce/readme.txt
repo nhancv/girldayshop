@@ -25,33 +25,9 @@ E-Commerce is a clean responsive e-commerce WordPress theme designed especially 
 
 includes support for Infinite Scroll and Responsive Videos in Jetpack.
 
-== Changelog ==
+== Change Log ==
 
-= 1.0.5 =
-* Added: Custom Logo( Core Support ) for WP version 4.5
-* Upgrade Button link fix
-* Bug Fixed: Textdomain issues
-
-= 1.0.4 =
-* Added Upgrade Button
-* Bug Fixed: Site tagline css
-
-= 1.0.3 =
-* Bug Fixed moved footer from sidebar to footer
-* Bug Fixed default image sizes
-* Update p to h2 for site description
-* Update theme description
-
-= 1.0.2 =
-* Fixed e-commerce in wp_localize_script
-
-= 1.0.1 =
-* Added Custom CSS
-* Added missing keywords in .pot language file
-* Update theme description
-
-= 1.0.0 - Jul 01 2015 =
-* Initial release
+Please refer to changelog.txt file or change log page at https://catchthemes.com/changelogs/e-commerce-theme/
 
 == Credits ==
 

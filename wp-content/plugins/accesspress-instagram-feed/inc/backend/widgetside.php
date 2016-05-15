@@ -38,7 +38,7 @@ class APIF_SideWidget extends WP_Widget {
         $instance_follow = (isset($instance['instance_follow']) && $instance['instance_follow']==1)?'true':'false';
 
 
-global $apif_settings, $insta;
+    global $apif_settings, $insta;
     $apif_settings = get_option( 'apif_settings' );
     $username = !empty($apif_settings['username']) ? $apif_settings['username'] : '';
     $user_id = !empty($apif_settings['user_id']) ? $apif_settings['user_id'] : '';

@@ -3,7 +3,7 @@
   Plugin name: AccessPress Social Login Lite
   Plugin URI: https://accesspressthemes.com/wordpress-plugins/accesspress-social-login-lite/
   Description: A plugin to add various social logins to a site.
-  version: 3.0.7
+  version: 3.0.8
   Author: AccessPress Themes
   Author URI: https://accesspressthemes.com/
   Text Domain: accesspress-social-login-lite
@@ -12,7 +12,7 @@
 */
 //Declearation of the necessary constants for plugin
 if( !defined( 'APSL_VERSION' ) ) {
-    define( 'APSL_VERSION', '3.0.7' );
+    define( 'APSL_VERSION', '3.0.8' );
 }
 
 if( !defined( 'APSL_IMAGE_DIR' ) ) {

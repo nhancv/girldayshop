@@ -39,15 +39,21 @@ function e_commerce_wrapper_end() {
 if ( ! function_exists( 'e_commerce_cart_link' ) ) {
 	
 	function e_commerce_cart_link() {
-		
-		if ( is_woocommerce_activated() ) { 
 		?>
-		<div class="cart-contents cart_totals">
-            <a href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" title="<?php _e( 'View cart', 'e-commerce' ); ?>">
-				<span class="cart-icon"></span><span class="subtotal"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span> <span class="count"><?php echo wp_kses_data( sprintf( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'e-commerce' ), WC()->cart->get_cart_contents_count() ) );?></span>
-			</a>
-        </div>
+		<div class="cart-contents cart_totals sidebar-cart">
+	        <?php
+	        if ( is_woocommerce_activated() ) { 
+			?>
+			    <a href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" title="<?php _e( 'View cart', 'e-commerce' ); ?>">
+					<span class="cart-icon"></span><span class="subtotal"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span> <span class="count"><?php echo wp_kses_data( sprintf( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'e-commerce' ), WC()->cart->get_cart_contents_count() ) );?></span>
+				</a>
+	        <?php
+			}
+			else {
+				get_Search_form();
+			}
+		?>
+		</div><!-- .cart-contents.cart_totals.sidebar-cart -->
 		<?php
-		}
 	}
 }

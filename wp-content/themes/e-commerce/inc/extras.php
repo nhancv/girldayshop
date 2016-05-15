@@ -66,3 +66,19 @@ if ( ! function_exists( 'e_commerce_get_logo' ) ) :
 		return $output;
 	}
 endif; // e_commerce_get_logo
+
+
+/**
+ * Flush out all transients
+ *
+ * @uses delete_transient
+ *
+ * @action customize_save, e_commerce_customize_preview (see e_commerce_customizer function: e_commerce_customize_preview)
+ *
+ * @since since E-commerce 1.2
+ */
+function e_commerce_flush_transients(){
+	delete_transient( 'e_commerce_featured_image' );
+}
+add_action( 'customize_save', 'e_commerce_flush_transients' );
+add_action( 'customize_preview_init', 'e_commerce_flush_transients' );

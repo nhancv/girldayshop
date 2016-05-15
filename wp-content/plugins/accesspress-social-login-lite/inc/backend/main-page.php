@@ -117,11 +117,13 @@ $options = get_option( APSL_SETTINGS );
                                                             <li><b>Please note:</b> We have now updated our facbook sdk version to 5.0 so to make the facebook login work you need to have PHP version 5.4 at least.</li>
                                                             <li>Go to <a href='https://developers.facebook.com/apps' target='_blank'>https://developers.facebook.com/apps</a>.</li>
                                                             <li>Click on 'Add a New App' button. A popup will open. Then choose website.</li>
-                                                            <li>Add the required informations and don't forget to make your app live. This is very important otherwise your app will not work for all users.</li>
-                                                            <li>Then Click the "Create App" button and follow the instructions, your new app will be created. </li>
-                                                            <li>To make app live please go to settings menu and enter your email address there. Click save changes.</li>
-                                                            <li>Now go the 'status and reviews' menu and make the app live.</li>
-                                                            <li>Copy and Paste "App ID" and "App Secret" here.</li>
+                                                            <li>Now please enter the name of the app as you wish. And please click on “Create New Facebook App ID” button, Again a popup will appear</li>
+                                                            <li>Please enter your contact Email and category as you need.</li>
+                                                            <li>Now click on “Create App ID’ button.</li>
+                                                            <li>Now the popup will disappear and please scroll down and there you will find a input field for your Site URL, there Please enter your site url and enter “Next” button. Now the app is created successfully.</li>
+                                                            <li>Now go to <a href='https://developers.facebook.com/apps' target='_blank'>https://developers.facebook.com/apps</a> there you will find your newly created app and click on the app that you have created. You will be redirected to app dashboard.</li>
+                                                            <li>In the landing page you will find the API version, App ID, App Secret. To view your App secret please click on “Show” button. Those are the required App ID and App Secret to be entered in our plugin settings.</li>
+                                                            <li>After that please go to App Review link just below the alert link there you will find an option to make the app public and select YES. This is very important otherwise your app will not work for all users.</li>
                                                             <li>Site url: <input type='text' value='<?php echo site_url(); ?>' readonly='readonly' /></li>
                                                         </ul>
                                                     </div>

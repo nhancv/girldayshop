@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: E-Commerce\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/e-commerce\n"
-"POT-Creation-Date: 2016-04-11 23:01+0545\n"
-"PO-Revision-Date: 2016-04-11 23:01+0545\n"
+"POT-Creation-Date: 2016-05-10 22:26+0545\n"
+"PO-Revision-Date: 2016-05-10 22:26+0545\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Catch Themes <info@catchthemes.com>\n"
 "Language: en\n"
@@ -109,6 +109,10 @@ msgstr ""
 
 #: ../inc/customizer.php:67
 msgid "Upgrade To Pro &raquo;"
+msgstr ""
+
+#: ../inc/structure.php:56
+msgid "Skip to content"
 msgstr ""
 
 # @ e-commerce
@@ -226,12 +230,12 @@ msgid "Theme: %1$s by %2$s."
 msgstr ""
 
 # @ e-commerce
-#: ../inc/woocommerce.php:46
+#: ../inc/woocommerce.php:47
 msgid "View cart"
 msgstr ""
 
 # @ e-commerce
-#: ../inc/woocommerce.php:47
+#: ../inc/woocommerce.php:48
 #, php-format
 msgid "%d item"
 msgid_plural "%d items"

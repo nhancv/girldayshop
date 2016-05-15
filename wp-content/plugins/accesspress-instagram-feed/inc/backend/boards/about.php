@@ -31,7 +31,7 @@ All you have to do is either use a widget or shortcode to display your instagram
 		<div class="seperator"></div><div class="dottedline"></div><div class="seperator"></div>
 
 		<h3>Get in touch</h3>
-		<p>If you’ve any question/feedback, please get in touch: <br />
+		<p>If you've any question/feedback, please get in touch: <br />
 			<strong>General enquiries:</strong> <a href="mailto:info@accesspressthemes.com">info@accesspressthemes.com</a><br />
 			<strong>Support:</strong> <a href="mailto:support@accesspressthemes.com">support@accesspressthemes.com</a><br />
 			<strong>Sales:</strong> <a href="mailto:sales@accesspressthemes.com">sales@accesspressthemes.com</a>

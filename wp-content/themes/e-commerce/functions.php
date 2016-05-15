@@ -185,7 +185,7 @@ add_action( 'admin_print_scripts-appearance_page_custom-header', 'e_commerce_adm
 /**
  * Implement the Custom Header feature.
  */
-//require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
@@ -211,3 +211,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load WooCommerce compatibility file.
  */
 require get_template_directory() . '/inc/woocommerce.php';
+
+/**
+ * Include Structure for Studio
+ */
+require get_template_directory() . '/inc/structure.php';

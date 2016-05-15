@@ -3,8 +3,8 @@ Contributors: Access Keys
 Tags: social,  login, social login, facebook, twitter, google, social connect, social network login, register, login with, signin, oauth, authorize, oauth
 Donate link: http://accesspressthemes.com/donation/
 Requires at least: 3.8
-Tested up to: 4.3
-Stable tag: 3.0.7
+Tested up to: 4.5
+Stable tag: 3.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,8 @@ Select from 4 beautiful designs of social login buttons/icons.
 
 <strong>Your website visitors can now login using one of their favorite social account login. Easy, quick and convenient.<strong>
 
+<strong> This plugin requires PHP version 5.4 or Higher. </strong>
+
 = Free Features: =
 * Login with the most popular 3 social media.
 * Configure each social accounts by setting up a few authorization details.
@@ -50,7 +52,7 @@ Select from 4 beautiful designs of social login buttons/icons.
         - Dedicated email, forum support.
 
 = Supported Networks: =
-* Facebook
+* Facebook 
 * Twitter
 * Google
 
@@ -131,6 +133,9 @@ Yes. You can use the AccessPress social login lite anywhere by using shortcode i
 4. Backend Other settings Section.
 
 == Changelog ==
+= 3.0.8 =
+* Modified facebook app creation note section.
+
 = 3.0.7 =
 * Done the modification of plugin to set the username to firstname.
 

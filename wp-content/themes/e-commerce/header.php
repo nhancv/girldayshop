@@ -4,51 +4,76 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package E-Commerce
+ * @package Catch Themes
+ * @subpackage E-commerce
+ * @since E-commerce 1.2
  */
 
-?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	/** 
+	 * e_commerce_doctype hook
+	 *
+	 * @hooked e_commerce_doctype -  10
+	 * 
+	 */
+	do_action( 'e_commerce_doctype' );
+	?>
 
-<?php wp_head(); ?>
+<head>
+<?php	
+	/** 
+	 * e_commerce_before_wp_head hook
+	 *
+	 * @hooked e_commerce_head -  10
+	 * 
+	 */
+	do_action( 'e_commerce_before_wp_head' );
+
+	wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'e-commerce' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<?php 
+	/** 
+	 * e_commerce_before_header hook
+	 *
+	 * @hooked e_commerce_page_start -  10
+	 * 
+	 */
+	do_action( 'e_commerce_before_header' );
 
-		<div class="site-branding">
-			<?php echo e_commerce_get_logo(); ?>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 
-         <?php if ( has_nav_menu( 'social' ) ) : ?>
-            <div class="social-menu">
-		        <?php wp_nav_menu( array(
-				    'theme_location' => 'social',
-				    'depth'          => '1',
-				    'link_before'    => '<span class="screen-reader-text">',
-				    'link_after'     => '</span>' )
-				    );
-                ?>
-            </div><!-- .social-menu -->
-        <?php endif; ?>
-		</div><!-- .site-branding -->
+	/** 
+	 * e_commerce_header hook
+	 *
+	 * @hooked e_commerce_header_start -  10
+	 * @hooked e_commerce_site_banner_start -  20
+	 * @hooked e_commerce_site_branding_start -  30
+	 * @hooked e_commerce_logo_site_title -  40
+	 * @hooked e_commerce_site_branding_end - 50
+	 * @hooked e_commerce_header_left - 60
+	 * @hooked e_commerce_header_right - 70
+	 * @hooked e_commerce_site_banner_end - 80
+	 * @hooked e_commerce_header_menu - 90
+	 * @hooked e_commerce_primary_menu - 100
+	 * @hooked e_commerce_header_end -  200
+	 * 
+	 */
+	do_action( 'e_commerce_header' );
 
-        <a href="#sidr-main" class="menu-toggle menu-icon"></a>
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
 
-            <?php e_commerce_cart_link() ;?>
+	/** 
+	 * e_commerce_after_header hook
+	 *
+	 * @hooked e_commerce_featured_image_display - 30
+	 * 
+	 */
+	do_action( 'e_commerce_after_header' );
 
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+	/** 
+	 * e_commerce_content hook
+	 *
+	 * @hooked e_commerce_content_start - 10
+	 * 
+	 */
+	do_action( 'e_commerce_content' );	
